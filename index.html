@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Documentação "</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+<section id="header">
+  <header> <span class="image avatar"><img src="images/app_icon.png" alt="" /></span>
+    <h4 id="logo"><a href="#">PHP Web Service</a></h4>
+  </header>
+  <nav id="nav">
+    <ul>
+      <li><a href="#server" class="active">Server Requirements</a></li>      
+      <li><a href="#one">Installation</a></li>
+      <li><a href="#email">Mail &amp; SMTP Configuration</a></li>    
+
+    </ul>
+  </nav>
+
+</section>
+<div id="wrapper">
+  <div id="main">
+
+    <div class="container">
+      
+         <header class="major">
+          <h2>PHP Web Service</h2>
+          
+        </header>
+        <div class="borderTop">
+      <div class="span-6 colborder info prepend-1">
+        <p class="prepend-top">
+          <strong>
+          Created: 23 July 2019<br>
+          
+          </strong>
+        </p>
+      </div>
+      <div class="span-12 last">
+            <p class="prepend-top append-0">Obrigado por comprar o aplicativo. Se você tiver alguma dúvida que esteja além do escopo deste arquivo de ajuda, sinta-se à vontade para nos enviar uma mensagem. Muito obrigado!</p>
+      </div>
+    </div>
+    </div>  
+
+    <section id="server">
+
+
+      <div class="container">
+
+
+        <h2 id="toc" > Server Requirements</h2>
+
+        <p class="lead">Checking to ensure that your web host have the minimum requirements to run web services.</p>
+             
+            <ul style="font-size: 18px;">
+                <li>PHP &gt;= 5.6</li>
+                <li>allow_url_fopen Enabled</li>
+                <li>short_open_tag Enabled</li>
+                <li>cURL support Enabled</li>
+                <li>PDO PHP Extension</li>                 
+                <li>JSON PHP Extension</li>
+            </ul>
+
+      </div>
+    </section>    
+
+    <section id="one">
+      <div class="container">
+       
+    <h2 id="toc" > Como configurar o serviço Painel no seu servidor?</h2>
+ 
+      <h1>Live Installation</h1>
+      <p>tutorial em vídeo adiante meramente ilustrativo tome como base.</p>
+          <iframe width="650" height="350" src="https://www.youtube.com/embed/L8OnmC4WPko" frameborder="0" allowfullscreen></iframe>
+
+      <ol>
+        <li>Primeiro encontre a pasta  <b>Painel</b> no pacote baixado e faça o upload no servidor ativo.</li>       
+        <li>Em seguida, crie um banco de dados no seu servidor. No video acima encina como faz, entre 1:03 min a 2:57 min. </li>
+        <li>Importe o banco de dados <b>Banco_De_Dados.sql</b>.</li> Segue no video , entre 4:15 min a 4:37 min
+        <li>Após criar o banco de dados, configure o arquivo <b>connection.php</b> que está na pasta <b>includes</b> do seu pacote.<br>
+		
+		
+		<span class="lightbox"> <img src="images/Servess.png" alt=""/> </span>            
+        <br>
+		
+         
+        </li>
+        
+
+      </ol>
+      <p>Isso é tudo, agora execute o serviço da web : <b>http://domain.com/Painel/index.php</b></p>
+        
+      <b>Detalhes padrão de login</b><br>
+      Usuário: admin<br>
+      Senha: admin <br><br>
+     
+      <p style="color: red"><b>Note:</b> After login verify purchase in settings section. Without purchase verification you can't use API.</p>  
+
+     </section>
+    <section id="email">
+      <div class="container">
+
+        <h2 id="toc" > Mail Configuration</h2>
+
+        <b>Hosting Server:</b><br>
+
+        Please open your smtp_email.php file on your web services main directory and configure with your SMTP server details
+        <br>
+        <code>   
+          $mail->Host = 'mail.example.com';  // Specify main and backup SMTP servers     <br> 
+          $mail->Username = 'info@example.com';                 // SMTP Email (e.g. info@domain.com)<br>
+          $mail->Password = 'xxxxx';                           // SMTP Email password <br>
+          $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted <br>
+          $mail->Port = 587;                                    // TCP port to connect   <br>
+             
+        </code>
+        <br>
+
+        <p class="lead">If you have problem with mailing with this setup than please contact your provider with those variables and ask correct info</p>
+
+      <br/>
+      <b>Gmail:</b><br>
+      <p class="lead"><b>NOTE:</b> You have to set less secure apps access your account enable and 2 factor authentication off</p>
+      <p>Less secure apps - Google Account please go through this <a href="https://myaccount.google.com/intro/security" target="_blank" style='color:#06F'>Link</a></p><br/> 
+      <code>   
+          $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers     <br> 
+          $mail->Username = 'yourusername@gmail.com';                 // Your full Gmail address (e.g. yourusername@gmail.com) <br>
+          $mail->Password = 'xxxxx';                           // Your Gmail password <br>
+          $mail->SMTPSecure = 'tls';                            // Gmail SMTP port (TLS): 587 OR Gmail SMTP port (SSL): 465 <br>
+          $mail->Port = 587;                                    // TCP port to connect   <br>
+             
+        </code>
+ 
+      <br>
+      <p class="lead"><b>NOTE:</b> Plese don't change any other code</p>    
+      </div>
+    </section>
+
+    <section id="credits">
+      <div class="container">
+       
+    
+    <p>Once again, thank you so much for purchasing this app. As I said at the beginning, I'd be glad to help you if you have any questions relating to this app. No guarantees, but I'll do my best to assist.</p> 
+    
+
+
+    <p><a style="color:#06F" href="#one">Go To Table of Contents</a></p>              <div class="section_bdr"></div>
+        </ul>
+      </div>
+    </section>
+    
+    </div>
+
+
+    
+    
+</div>
+
+<!-- Scripts --> 
+<script src="assets/js/jquery.min.js"></script> 
+<script src="assets/js/jquery.scrollzer.min.js"></script> 
+<script src="assets/js/jquery.scrolly.min.js"></script> 
+<script src="assets/js/skel.min.js"></script> 
+<script src="assets/js/util.js"></script> 
+<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]--> 
+<script src="assets/js/main.js"></script>
+</body>
+</html> 
